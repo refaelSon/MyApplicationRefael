@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView et3;
     Button btn;
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId")//בדיקההה
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
