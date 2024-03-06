@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1CC9DF"
+    tools:context=".logIn">
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="250dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/abril_fatface"
+        android:gravity="center"
+        android:text="log in"
+        android:textColor="#DD1212"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFinnish"
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="179dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="372dp"
+        android:text="finish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCreateAcount"
+        android:layout_width="127dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="496dp"
+        android:text="create an acount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
