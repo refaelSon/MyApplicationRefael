@@ -3,7 +3,9 @@ package com.example.myapplicationrefael;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -61,6 +63,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                   {
                       et3.setText("grate!");
 
+                      SharedPreferences sharedPref = this.getSharedPreferences("userData", Context.MODE_PRIVATE);
+                      SharedPreferences.Editor editor = sharedPref.edit();
+                      editor.putString("userName",etName.getText().toString());
+                      editor.putString("password", et2.getText().toString());
+                      editor.apply();
                       Intent go = new Intent(this,logIn.class);
                       startActivity(go);
 
